@@ -1,0 +1,10 @@
+# AI session handover notes — local only, not for publication
+HANDOVER.md
+
+# Browser-automation artifacts
+.playwright-mcp/
+
+# Editor / OS cruft
+*.swp
+*~
+.DS_Store

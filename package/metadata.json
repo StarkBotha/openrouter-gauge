@@ -1,0 +1,28 @@
+{
+    "KPlugin": {
+        "Id": "com.stark.openrouter-gauge",
+        "Name": "OpenRouter Credit Balance",
+        "Description": "Shows your OpenRouter prepaid credit balance",
+        "Category": "System Information",
+        "Icon": "network-server",
+        "Authors": [
+            {
+                "Name": "Stark Botha"
+            }
+        ],
+        "License": "MIT",
+        "Version": "1.0.0",
+        "Website": "https://openrouter.ai",
+        "EnabledByDefault": true,
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "FormFactors": [
+            "desktop",
+            "tablet",
+            "handset"
+        ]
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml"
+}
