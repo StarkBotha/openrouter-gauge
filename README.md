@@ -4,6 +4,10 @@ A KDE Plasma 5 panel widget that shows your [OpenRouter](https://openrouter.ai) 
 
 The compact panel view shows the OpenRouter logo and your remaining balance, colour-coded by how much you have left (green → neutral → red). Click it for a popup with a full breakdown — total credits, total usage, and last-updated time — plus a manual refresh button.
 
+![OpenRouter Gauge popup showing remaining balance, total credits, and usage](docs/screenshot.png)
+
+> Figures shown are illustrative sample data.
+
 ## Features
 
 - Live remaining balance in your panel, polled every 5 minutes
