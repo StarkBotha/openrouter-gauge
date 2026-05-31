@@ -21,6 +21,9 @@ Item {
 
     Plasmoid.preferredRepresentation: Plasmoid.compactRepresentation
 
+    // Separate resizable model-browser window (opened from the popup)
+    ModelBrowserWindow { id: modelBrowser }
+
     // Poll timer
     Timer {
         id: pollTimer
@@ -273,6 +276,12 @@ Item {
                 icon.name: "view-refresh"
                 enabled: apiKey.length > 0 && !isLoading
                 onClicked: fetchBalance()
+            }
+
+            PlasmaComponents.Button {
+                text: "Browse Models…"
+                icon.name: "view-list-details"
+                onClicked: modelBrowser.open()
             }
         }
 

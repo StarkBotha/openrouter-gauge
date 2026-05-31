@@ -15,6 +15,15 @@ The compact panel view shows the OpenRouter logo and your remaining balance, col
 - Expandable popup with total credits, total usage, and last-updated timestamp
 - Manual **Refresh** button
 - API key stored via the widget's standard Configure dialog
+- **Model browser** — search and sort every OpenRouter model by up to three dimensions at once
+
+## Browse models
+
+Click **Browse Models…** in the popup to open a searchable, sortable table of every model on OpenRouter.
+
+Unlike the website, you can sort by **up to three dimensions at once** — for example, context length, *then* prompt price, *then* name — using the three sort tiers. Type in the search box to filter by name or id, and **click any row to copy its model id** (e.g. `anthropic/claude-opus-4.8`) to the clipboard.
+
+![Model browser: searchable, sortable table of OpenRouter models](docs/models-browser.png)
 
 ## Requirements
 
@@ -51,6 +60,8 @@ The widget calls `GET https://openrouter.ai/api/v1/credits` with your key as a B
 ```
 remaining balance = data.total_credits − data.total_usage
 ```
+
+The model browser uses the public `GET https://openrouter.ai/api/v1/models` endpoint (no API key required).
 
 ## Uninstall
 
