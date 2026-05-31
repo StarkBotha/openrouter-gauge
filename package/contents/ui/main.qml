@@ -215,7 +215,7 @@ Item {
             Layout.alignment: Qt.AlignHCenter
 
             PlasmaComponents.Label {
-                text: "Total Credits:"
+                text: "Lifetime Credits:"
                 opacity: 0.7
             }
             PlasmaComponents.Label {
@@ -224,7 +224,7 @@ Item {
             }
 
             PlasmaComponents.Label {
-                text: "Total Usage:"
+                text: "Lifetime Usage:"
                 opacity: 0.7
             }
             PlasmaComponents.Label {
